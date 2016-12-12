@@ -23,5 +23,5 @@ App.defaultProps = {
   headerProp:"Modified header from props..",
   contentProp:"Modified Content Prop"
 }
-   
+
 export default App;
