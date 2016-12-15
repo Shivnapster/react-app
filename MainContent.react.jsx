@@ -4,7 +4,7 @@ class MainComponent extends React.Component {
     constructor(props){
       super(props);
 
-    
+      // Using states
       this.state = {
         "header" : "Header from State.....",
         "content" : "Content from state......"
@@ -14,8 +14,10 @@ class MainComponent extends React.Component {
     render () {
       return(
         <div>
+
             <div>{this.state.header}</div>
             <div>{this.state.content}</div>
+            
             <p>Props Validation Value</p>
             <ul>
               <li>Array:  {this.props.PropArray}</li>
@@ -34,7 +36,7 @@ class MainComponent extends React.Component {
 
 
 }
-
+// Props Validation
 MainComponent.propsTypes = {
   PropArray: React.PropTypes.array.isRequired,
   PropBool: React.PropTypes.bool.isRequired,
@@ -44,6 +46,7 @@ MainComponent.propsTypes = {
   PropObject: React.PropTypes.object
 }
 
+//Props Values
 MainComponent.defaultProps = {
   PropArray: [1,2,3,4],
   PropBool: true,
