@@ -18,6 +18,7 @@ class LifeCycleComponent extends React.Component{
     render() {
       return(
         <div>
+          <h3>LifeCycle Example</h3>
           <button onClick = {this.setNNumbers} > React LifeCycle </button>
           <CycleDisplay passNumber = {this.state.data} />
         </div>

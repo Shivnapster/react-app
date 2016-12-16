@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//Set State Functions
 class FooterComponent extends React.Component {
   
   constructor(){
@@ -32,7 +34,15 @@ class FooterComponent extends React.Component {
    };
 
   setStateHandler() {
-    var item = "New State..";
+   
+
+    if(typeof  item == "undefined" ||  item == null){
+      var item = 0;
+    }
+    else{
+        var item = item+1;
+    }
+ 
     var myArray = this.state.data;
     myArray.push(item)
     this.setState({data: myArray})
@@ -42,6 +52,7 @@ class FooterComponent extends React.Component {
    render() {
       return (
          <div>
+            <h3>Footer Content File</h3>
             <button onClick = {this.setStateHandler}>Set State</button>
             <p>State myArray : {this.state.data}</p>
         

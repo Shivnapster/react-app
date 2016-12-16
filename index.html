@@ -5,11 +5,31 @@
       <meta charset = "UTF-8">
       <title>React App</title>
       <link rel="stylesheet" href="style.css" />
+      <style>
+        .wrapper, .list-inline{
+          display: block;
+        }
+
+        #app, #lifecycle_exp, #FormView, #SetData{
+          display:inline-block;
+          float: left;
+          margin: 30px;
+        }
+        .list-inline li{
+          display:inline-block;
+          float: left;
+          margin: 5px;
+        }
+      </style>
    </head>
 
    <body>
-      <div id = "app"></div>
-      
+      <div class="wrapper">
+          <div id = "app"> </div>
+          
+      </div>
+
+
       <script src = "index.js"></script>
    </body>
 

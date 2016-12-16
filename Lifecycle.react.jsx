@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Components LifeCycle 
+
 class LifeCycleComponent extends React.Component{
     constructor(props){
       super(props);

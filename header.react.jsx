@@ -1,10 +1,11 @@
 import React from 'react';
 import TableRow from './table-row.react.jsx';
 
+// Displaying an array with the help of table row
 class HeaderComponent extends React.Component {
     constructor() {
       super();
-      
+      //Declaring State
       this.state = {
          data: 
          [
@@ -30,14 +31,11 @@ class HeaderComponent extends React.Component {
    }
    render() {
       return (
+      
          <div>
-            <table>
-               <tbody>
-                  {this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}
-
-               </tbody>
-            </table>
-            <h1>{this.props.headervalue}</h1>
+            <h3>Header React File</h3>
+            <div >{this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}</div>
+            <br /><h1>{this.props.headervalue}</h1>
          </div>
       );
    }

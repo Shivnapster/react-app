@@ -1,29 +1,29 @@
 import React from 'react';
-import HeaderCoponent from './header.react.jsx';
-import FooterCoponent from './footer.react.jsx';
-import MainComponent from './MainContent.react.jsx';
-import LifeCycleComponent from './lifecycleExample.react.jsx';
+import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 
 class App extends React.Component {
    render() {
       return (
          <div>
-            // Passing Prop value to the child compnents
-            <HeaderCoponent headervalue = {this.props.headerProp}/>
-            <MainComponent />
-               
-            <h1>{this.props.contentProp}</h1>
-            <FooterCoponent />
-
-            <LifeCycleComponent />
+            <ul>
+               <Link to="/maincomponent">MainComponent</Link>
+              
+               <Link to="/lifecyclecomponent">LifeCycleComponent</Link>
+               <Link to="/FooterComponent">FooterCoponent</Link>
+               <Link to="/formcomponent">FormComponent</Link>
+            </ul>
+        
+           {this.props.children}
+           
          </div>
       );
    }
 }
+
   //Assigning Prorps
   App.defaultProps = {
-    headerProp:"Modified header from props..",
-    contentProp:"Modified Content Prop"
+    headerProp : "Modified header from props..",
+    contentProp : "Modified Content Prop"
   }
    
 export default App;
