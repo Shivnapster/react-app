@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
@@ -21,16 +22,14 @@ ReactDOM.render( <Router history = {browserHistory}>
                        <Route path = "/FooterComponent" component = {FooterComponent}></Route>
                     </Route>
                  </Router>, document.getElementById('app'));
-
-
 {
-/*
-//ReactDOM.render(<LifeCycleComponent />, document.getElementById('lifecycle_exp'));
+  /*
+// ReactDOM.render(<LifeCycleComponent />, document.getElementById('lifecycle_exp'));
 
-//ReactDOM.render(<FormComponent />, document.getElementById('FormView'));
+// ReactDOM.render(<FormComponent />, document.getElementById('FormView'));
 
-//ReactDOM.render(<HeaderCoponent />, document.getElementById('SetData'));
+// ReactDOM.render(<HeaderCoponent />, document.getElementById('SetData'));
 
-//ReactDOM.render(<MainComponent />, document.getElementById('SetData'));
+// ReactDOM.render(<MainComponent />, document.getElementById('SetData'));
 */
 }

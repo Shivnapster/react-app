@@ -32,7 +32,7 @@ class HeaderComponent extends React.Component {
    render() {
       return (
       
-         <div>
+         <div className="content">
             <h3>Header React File</h3>
             <div >{this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}</div>
             <br /><h1>{this.props.headervalue}</h1>

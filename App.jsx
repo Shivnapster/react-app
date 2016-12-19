@@ -4,13 +4,13 @@ import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 class App extends React.Component {
    render() {
       return (
-         <div>
+         <div className="content">
             <ul>
-               <Link to="/maincomponent">MainComponent</Link>
+               <Link to="/maincomponent">MainComponent </Link>
               
-               <Link to="/lifecyclecomponent">LifeCycleComponent</Link>
-               <Link to="/FooterComponent">FooterCoponent</Link>
-               <Link to="/formcomponent">FormComponent</Link>
+               <Link to="/lifecyclecomponent">LifeCycleComponent </Link>
+               <Link to="/FooterComponent">FooterComponent </Link>
+               <Link to="/formcomponent">FormComponent </Link>
             </ul>
         
            {this.props.children}
@@ -27,3 +27,4 @@ class App extends React.Component {
   }
    
 export default App;
+

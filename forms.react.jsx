@@ -29,7 +29,7 @@ class FormComponent extends React.Component {
 
    render() {
       return (
-         <div>
+         <div className="content">
             {
               /*Pass the input value to props*/
             }

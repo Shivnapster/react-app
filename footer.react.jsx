@@ -51,7 +51,7 @@ class FooterComponent extends React.Component {
 
    render() {
       return (
-         <div>
+         <div className="content">
             <h3>Footer Content File</h3>
             <button onClick = {this.setStateHandler}>Set State</button>
             <p>State myArray : {this.state.data}</p>

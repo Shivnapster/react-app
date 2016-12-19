@@ -14,7 +14,7 @@ class MainComponent extends React.Component {
     
     render () {
       return(
-        <div>
+        <div className="content">
             <h3>Main Content File</h3>
             <div>{this.state.header}</div>
             <div>{this.state.content}</div>
